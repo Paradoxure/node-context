@@ -1,0 +1,38 @@
+{
+  "name": "@zorzal2/context",
+  "version": "0.1.0",
+  "description": "Request context for web applications",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "tsc": "tsc",
+    "watch-ts": "tsc -w",
+    "build": "tsc && npm run tslint",
+    "start": "node dist/index.js",
+    "launch": "npm run build && npm start",
+    "tslint": "tslint -c tslint.json -p tsconfig.json 'src/**/*.ts'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zorzal2/node-context.git"
+  },
+  "keywords": [],
+  "author": "llobeto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zorzal2/node-context/issues"
+  },
+  "homepage": "https://github.com/zorzal2/node-context#readme",
+  "dependencies": {
+    "@types/node": "^11.13.0",
+    "express-http-context": "^1.2.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "express": "^4.16.4",
+    "jest": "^24.7.1",
+    "ts-jest": "^24.0.1",
+    "tslint": "^5.15.0",
+    "typescript": "^3.4.1"
+  }
+}
