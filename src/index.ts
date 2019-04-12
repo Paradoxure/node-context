@@ -1,5 +1,7 @@
 import * as context from 'express-http-context';
 
-export const get = context.get;
-export const set = context.set;
-export const middleware = context.middleware;
+export default {
+  get: context.get,
+  set: context.set,
+  middleware: context.middleware
+};
